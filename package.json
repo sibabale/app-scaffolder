@@ -1,5 +1,5 @@
 {
-  "name": "scaffold-cli",
+  "name": "app-scaffolder",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
@@ -24,6 +24,6 @@
     "typescript": "5.4.5"
   },
   "bin": {
-    "scaffold-cli": "./dist/bin/cli.js"
+    "app-scaffolder": "./dist/bin/cli.js"
   }
 }

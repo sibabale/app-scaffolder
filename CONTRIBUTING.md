@@ -1,9 +1,9 @@
 Sure, here’s a detailed `CONTRIBUTING.md` file to guide contributors on how to contribute to your project:
 
 ```markdown
-# Contributing to Scaffold CLI
+# Contributing to App Scaffolder
 
-We welcome contributions to Scaffold CLI! Whether you're fixing bugs, adding new features, improving documentation, or suggesting ideas, your input is valuable to us.
+We welcome contributions to App Scaffolder! Whether you're fixing bugs, adding new features, improving documentation, or suggesting ideas, your input is valuable to us.
 
 ## How to Contribute
 
@@ -11,8 +11,8 @@ We welcome contributions to Scaffold CLI! Whether you're fixing bugs, adding new
 
 2. **Clone your fork**: Clone your forked repository to your local machine.
    ```sh
-   git clone https://github.com/YOUR-USERNAME/scaffold-cli.git
-   cd scaffold-cli
+   git clone https://github.com/YOUR-USERNAME/app-scaffolder.git
+   cd app-scaffolder
    ```
 
 3. **Create a new branch**: Create a new branch for your feature or bug fix.
@@ -53,17 +53,17 @@ If you encounter bugs or have suggestions for improvements, please open an issue
 
 1. **Install dependencies**:
    ```sh
-   npm install
+   yarn install
    ```
 
 2. **Build the project**:
    ```sh
-   npm run build
+   yarn run build
    ```
 
 ## License
 
-By contributing to Scaffold CLI, you agree that your contributions will be licensed under the MIT License.
+By contributing to App Scaffolder, you agree that your contributions will be licensed under the MIT License.
 
 ## Code of Conduct
 
