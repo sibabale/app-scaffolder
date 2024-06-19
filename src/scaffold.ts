@@ -14,7 +14,7 @@ const getCurrentDir = (): string => path.resolve(__dirname);
 
 const getDestinationDir = (appName: string, isDevelopment: boolean): string => {
   return isDevelopment
-    ? path.resolve(getCurrentDir(), '../../apps', appName)
+    ? path.resolve(getCurrentDir(), '../apps', appName)
     : path.resolve(cwd(), appName);
 };
 
