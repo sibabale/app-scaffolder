@@ -1,0 +1,30 @@
+{
+  "name": "scaffold-cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && node add-shebang.cjs"
+  },
+  "keywords": [],
+  "author": "Sibabale Joja sibabalejoja@gmail.com",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "fs-extra": "11.2.0",
+    "handlebars": "4.7.8",
+    "inquirer": "9.2.23"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "11.0.4",
+    "@types/handlebars": "4.1.0",
+    "@types/inquirer": "9.0.7",
+    "@types/node": "20.14.5",
+    "tailwindcss": "3.4.4",
+    "ts-node": "10.9.2",
+    "typescript": "5.4.5"
+  },
+  "bin": {
+    "scaffold-cli": "./dist/bin/cli.js"
+  }
+}

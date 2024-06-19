@@ -1,0 +1,22 @@
+# Ignore source files and unnecessary directories
+src/
+apps/
+node_modules/
+test/
+coverage/
+
+# Ignore build and config files
+tsconfig.json
+tslint.json
+.eslintrc.js
+.prettierrc
+jest.config.js
+package-lock.json
+yarn.lock
+*.log
+*.ts
+
+# Ignore other unnecessary files
+.DS_Store
+*.log
+*.swp
