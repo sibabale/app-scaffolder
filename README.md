@@ -1,7 +1,7 @@
 
-# Scaffold CLI
+# App Scaffolder
 
-Scaffold CLI is a command-line tool that scaffolds front-end applications with different frameworks and style libraries offline. It supports creating projects using React, and Vue, with styling options including Bootstrap, Tailwind CSS, and Material UI.
+App Scaffolder is a command-line tool that scaffolds front-end applications with different frameworks and style libraries offline. It supports creating projects using React, and Vue, with styling options including Bootstrap, Tailwind CSS, and Material UI.
 
 ## Features
 
@@ -12,10 +12,10 @@ Scaffold CLI is a command-line tool that scaffolds front-end applications with d
 
 ## Installation
 
-To install Scaffold CLI globally, use npm:
+To install App Scaffolder globally, use npm:
 
 ```sh
-npm install -g scaffold-cli
+npm install -g app-scaffolder
 ```
 
 ## Usage
@@ -23,7 +23,7 @@ npm install -g scaffold-cli
 Run the CLI tool by typing:
 
 ```sh
-scaffold-cli
+app-scaffolder
 ```
 
 You will be prompted to choose a framework and a style library for your new project. Additionally, you can specify the name of your application.
@@ -31,7 +31,7 @@ You will be prompted to choose a framework and a style library for your new proj
 ### Example
 
 ```sh
-scaffold-cli
+app-scaffolder
 ```
 
 ### Prompts
@@ -61,7 +61,7 @@ my-app
 
 ## Local Installation of Style Libraries
 
-Scaffold CLI can install style libraries from a local source. Make sure you have the local packages available before running the CLI.
+App Scaffolder can install style libraries from a local source. Make sure you have the local packages available before running the CLI.
 
 ## Contributing
 
