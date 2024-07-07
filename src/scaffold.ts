@@ -1,9 +1,11 @@
 import path from 'path';
+import chalk from 'chalk';
 import { execSync } from 'child_process';
 import { fileURLToPath } from 'url';
+import 'dotenv/config'; // Add this line to load .env variables
 
 import { installDependencies } from './utils/install.js';
-import { updateFiles, copyTemplate, getDestinationDir  } from './utils/files.js';
+import { updateFiles, copyTemplate, getDestinationDir } from './utils/files.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -18,9 +20,12 @@ export const scaffoldApp = (
 ) => {
   const isDevelopment = process.env.NODE_ENV === 'development';
   const destDir = getDestinationDir(appName, isDevelopment);
+
   const templateDir = path.resolve(getCurrentDir(), '../templates', framework.toLowerCase());
 
-  console.log(`Creating a new ${framework} app named "${appName}" with ${styleLibrary}...`);
+  console.log(chalk.green(`
+    Creating a new ${framework} app named "${appName}" with ${styleLibrary}...
+  `));
 
   // Copy template files
   copyTemplate(templateDir, destDir);
@@ -57,4 +62,3 @@ export const scaffoldApp = (
   console.log(`Navigate to your app directory: cd ${destDir}`);
   console.log(`Start the app with: ${packageManager} start`);
 };
-
