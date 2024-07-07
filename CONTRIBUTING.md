@@ -1,6 +1,4 @@
-Sure, here’s a detailed `CONTRIBUTING.md` file to guide contributors on how to contribute to your project:
 
-```markdown
 # Contributing to App Scaffolder
 
 We welcome contributions to App Scaffolder! Whether you're fixing bugs, adding new features, improving documentation, or suggesting ideas, your input is valuable to us.
@@ -51,6 +49,13 @@ If you encounter bugs or have suggestions for improvements, please open an issue
 
 ## Development Setup
 
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm (v7 or higher) or yarn (v1.22 or higher)
+
+### Setting Up
+
 1. **Install dependencies**:
    ```sh
    yarn install
@@ -61,6 +66,38 @@ If you encounter bugs or have suggestions for improvements, please open an issue
    yarn run build
    ```
 
+### Running in Development Mode
+
+In development mode, scaffolded apps are stored in the `apps` directory within the project root. This allows you to easily access and work on multiple scaffolded apps.
+
+To enable development mode, update your `.env` file:
+
+```
+NODE_ENV=development
+```
+
+Then, run the app scaffolder:
+
+```sh
+npx app-scaffolder
+```
+
+### Running in Production Mode
+
+In production mode, scaffolded apps are created in the directory where the CLI command is executed, ensuring that users have their apps created in their current working directory.
+
+To run the app in production mode, ensure your `.env` file is set to:
+
+```
+NODE_ENV=production
+```
+
+Then, run the app scaffolder:
+
+```sh
+npx app-scaffolder
+```
+
 ## License
 
 By contributing to App Scaffolder, you agree that your contributions will be licensed under the MIT License.
@@ -70,3 +107,6 @@ By contributing to App Scaffolder, you agree that your contributions will be lic
 Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
 
 Thank you for contributing!
+```
+
+This version includes clear instructions on how to set the environment mode through the `.env` file and explains the different behaviors in development and production modes.
